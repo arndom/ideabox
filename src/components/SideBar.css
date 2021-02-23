@@ -1,0 +1,29 @@
+.sideBar{
+    background-color:#1F2937;
+    width:8vw;
+    height: 100vh;
+    padding: 0 1rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBar__logo{
+    margin-top: 20px ;
+}
+
+.sideBar__logo > h3{
+    color: white !important;
+}
+
+.sideBar__categoryButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBar__categoryButtons > button{
+    margin: 10px 0;
+    padding: 0 0 0 5px;
+    font-size: x-small;
+    font-weight: 600;
+}
