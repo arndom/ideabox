@@ -1,0 +1,17 @@
+.postCard{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #111827;
+}
+
+.postCard__heading{
+    display: flex;
+    flex-direction: row;
+}
+
+.postCard__subText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

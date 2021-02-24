@@ -13,13 +13,13 @@ function Feed({selectedCategory}) {
             {/* reddit feed container */}
             <div className = 'feed__reddit'>
                 <FeedHeader title = 'Reddit  r/AppIdeas'/>
-                <RedditFeed/>
+                <RedditFeed selectedCategory = {selectedCategory}/>
             </div>
 
             {/* dev.to feed container */}
             <div className = 'feed__dev'>
                 <FeedHeader title = 'Dev.to  #ideas'/>
-                <DevFeed/>
+                <DevFeed selectedCategory = {selectedCategory}/>
             </div>
             
             {/* hashnode feed container */}

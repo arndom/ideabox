@@ -12,8 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 20px;
-
+    margin-left: 10px;
 }
 
 .feed__dev{
@@ -22,7 +21,8 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 20px;
+    margin-left: 10px;
+    
 }
 
 .feed__hash{
@@ -31,6 +31,6 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }

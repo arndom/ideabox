@@ -5,15 +5,42 @@
     padding: 0 1rem;  
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
 .sideBar__logo{
-    margin-top: 20px ;
+    padding:0.8rem 0;  
+    margin-bottom: 20px;
+}
+
+.sideBar__logo > h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sideBar__logo > h3 > img{
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+}
+
+.sideBar__postButton{
+  background-color: #FFD679;
+  border: 1px solid #FFD679;
+  padding: 5px;
+  border-radius: 100px;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 20px;  
 }
 
 .sideBar__logo > h3{
     color: white !important;
+    letter-spacing: 0.8px;
+
 }
 
 .sideBar__categoryButtons{
@@ -22,8 +49,8 @@
 }
 
 .sideBar__categoryButtons > button{
-    margin: 10px 0;
-    padding: 0 0 0 5px;
+    margin: 15px 0;
+    padding: 5px 0;
     font-size: x-small;
     font-weight: 600;
 }
