@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className= 'app'>
-
+        
         <SideBar setSelectedCategory = {setSelectedCategory} setSelectedFeed={setSelectedFeed} />
 
         <Feed selectedCategory = {selectedCategory} selectedFeed = {selectedFeed} setSelectedFeed = {setSelectedFeed}/>

@@ -2,8 +2,8 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import PostCard from './PostCard';
 import './RedditFeed.css'; 
 import {redditInstance} from '../axios';
-import { ContactSupportOutlined } from '@material-ui/icons';
-import requests from '../requests';
+import ReactTimeAgo from 'react-time-ago';
+
 
 function RedditFeed({selectedCategory, selectedFeed, setSelectedFeed}) {
     
@@ -57,9 +57,21 @@ function RedditFeed({selectedCategory, selectedFeed, setSelectedFeed}) {
 
     return (
         <div className = 'redditFeed' onScroll = {handleScroll}>
-            {feed.map( (post) => (
-                <PostCard key = {post.id} author = {`@${post.author}`} time ='' title = {post.title} reactions = {post.ups} />
-            ))}
+            {feed.map( (post) => {
+                // convert unix time
+               var rTime = new Date(post.created_utc*1000).toISOString();
+
+               return (
+                <PostCard
+                    key = {post.id}
+                    author = {`@${post.author}`}
+                    time = {<ReactTimeAgo date={rTime} locale="en-US"/>}
+                    title = {post.title}
+                    reactions = {post.ups}
+                 />
+                )
+                
+            })}
         </div>
     )
 }

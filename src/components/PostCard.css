@@ -8,6 +8,7 @@
 .postCard__heading{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .postCard__heading >p{
@@ -22,7 +23,7 @@
 }
 
 .postCard__subText > h5{
-    margin:5px;
+    margin:10px;
     color: white;
     font-weight: 500;
     letter-spacing: 0.4px;
@@ -35,5 +36,5 @@
 
 .postCard__subText > p > .MuiSvgIcon-root{
     font-size:medium;
-
+    color: #FFCC13;
 }

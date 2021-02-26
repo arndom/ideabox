@@ -1,10 +1,11 @@
 import React from 'react';
 import './FeedHeader.css';
 
-function FeedHeader({title}) {
+function FeedHeader({title, subTitle}) {
     return (
         <div className = 'feedHeader'>
-            <h5>{title}</h5>
+            <h4>{title}</h4>
+            <p>{subTitle}</p>
         </div>
     )
 }

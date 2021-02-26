@@ -12,19 +12,19 @@ function Feed({selectedCategory, selectedFeed, setSelectedFeed}) {
             
             {/* reddit feed container */}
             <div className = 'feed__reddit'>
-                <FeedHeader title = 'Reddit  r/AppIdeas'/>
+                <FeedHeader title = 'Reddit' subTitle = 'r/AppIdeas'/>
                 <RedditFeed selectedCategory = {selectedCategory[0]} selectedFeed = {selectedFeed} setSelectedFeed={setSelectedFeed}/>
             </div>
 
             {/* dev.to feed container */}
             <div className = 'feed__dev'>
-                <FeedHeader title = 'Dev.to  #ideas'/>
+                <FeedHeader title = 'Dev.to' subTitle = '#ideas'/>
                 <DevFeed selectedCategory = {selectedCategory[1]}/>
             </div>
             
             {/* hashnode feed container */}
             <div className = 'feed__hash'>
-                <FeedHeader title = 'Hashnode  #ideas'/>
+                <FeedHeader title = 'Hashnode' subTitle = '#ideas'/>
                 <HashFeed/>
             </div>
 
