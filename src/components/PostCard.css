@@ -1,7 +1,7 @@
 .postCard{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #111827;
 }
 
@@ -10,8 +10,30 @@
     flex-direction: row;
 }
 
+.postCard__heading >p{
+    font-size: small;
+}
+
 .postCard__subText{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 15px;
+}
+
+.postCard__subText > h5{
+    margin:5px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.postCard__subText > p{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+
+.postCard__subText > p > .MuiSvgIcon-root{
+    font-size:medium;
+
 }

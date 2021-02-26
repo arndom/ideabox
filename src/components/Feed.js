@@ -5,7 +5,7 @@ import FeedHeader from './FeedHeader';
 import HashFeed from './HashFeed';
 import RedditFeed from './RedditFeed';
 
-function Feed({selectedCategory}) {
+function Feed({selectedCategory, selectedFeed, setSelectedFeed}) {
 
     return (
         <div className = 'feed'>
@@ -13,13 +13,13 @@ function Feed({selectedCategory}) {
             {/* reddit feed container */}
             <div className = 'feed__reddit'>
                 <FeedHeader title = 'Reddit  r/AppIdeas'/>
-                <RedditFeed selectedCategory = {selectedCategory}/>
+                <RedditFeed selectedCategory = {selectedCategory[0]} selectedFeed = {selectedFeed} setSelectedFeed={setSelectedFeed}/>
             </div>
 
             {/* dev.to feed container */}
             <div className = 'feed__dev'>
                 <FeedHeader title = 'Dev.to  #ideas'/>
-                <DevFeed selectedCategory = {selectedCategory}/>
+                <DevFeed selectedCategory = {selectedCategory[1]}/>
             </div>
             
             {/* hashnode feed container */}

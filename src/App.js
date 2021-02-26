@@ -7,17 +7,19 @@ import requests from "./requests";
 function App() {
   // select recent, featured, best for feeds
   const [selectedCategory, setSelectedCategory] = useState(requests.fetchHot); 
+  const[selectedFeed, setSelectedFeed] = useState(false);
 
   useEffect(() => { 
-    console.log(selectedCategory)
-  }, [selectedCategory])
+    // console.log(selectedCategory)
+    // console.log('selectedFeed ' + selectedFeed)
+  }, [] )
 
   return (
     <div className= 'app'>
 
-        <SideBar setSelectedCategory = {setSelectedCategory}/>
+        <SideBar setSelectedCategory = {setSelectedCategory} setSelectedFeed={setSelectedFeed} />
 
-        <Feed selectedCategory = {selectedCategory}/>
+        <Feed selectedCategory = {selectedCategory} selectedFeed = {selectedFeed} setSelectedFeed = {setSelectedFeed}/>
 
     </div>
   );
