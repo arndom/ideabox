@@ -9,20 +9,27 @@ function DevFeed({selectedCategory}) {
     const[feed, setFeed] = useState([]);
 
     const[date, setDate] = useState('');
-    // didn't implement pagination cos posts are limited
+
+    // couldn't implement pagination because #ideas posts are limited
+    const endPost = [{
+        "user": {
+            "username": "_dev"
+        },
+        "title": "You've reached the end, why not contribute ➕👈",
+        "public_reactions_count": '1',
+        "url": '#'
+    }]
 
     async function fetchDev(){
         const response = await devInstance.get(selectedCategory)
-        // console.log(response.data)
-        setFeed(response.data)
+        setFeed((response.data).concat(endPost))
         return response
     }
 
     const handleScroll = (e) =>{
-        var isBottom = Math.round(e.target.scrollHeight - e.target.scrollTop) === e.target.clientHeight;    
+        var isBottom = Math.round(e.target.scrollHeight - e.target.scrollTop) <= e.target.clientHeight;    
         if(isBottom){
             console.log('bottom');
-
         }
     } 
 
@@ -32,7 +39,8 @@ function DevFeed({selectedCategory}) {
     }
 
     useEffect(() => {
-        fetchDev();
+            console.log(feed)
+            fetchDev();
     }, [selectedCategory])
     
     return (
@@ -40,9 +48,9 @@ function DevFeed({selectedCategory}) {
             {feed.map( (post) => (
                 <PostCard
                     key = {post.id}
-                    author = {`@${post.user.username}`}
+                    author = {(post.user) && `@${post.user.username}`}
                     title = {post.title}
-                    time = {<ReactTimeAgo date={post.published_timestamp} locale="en-US"/>}
+                    time = {(post.published_timestamp) && <ReactTimeAgo date={post.published_timestamp} locale="en-US"/>}
                     reactions = {post.public_reactions_count} 
                     link = {post.url}
                 />

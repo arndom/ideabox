@@ -33,6 +33,10 @@
 
 }
 
+.sideBar__post{
+    padding-bottom: 20px;
+}
+
 .MuiPaper-root{
     background-color: #1F2937 !important;
 }

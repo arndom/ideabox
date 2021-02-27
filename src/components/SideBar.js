@@ -20,7 +20,7 @@ function SideBar({selectedCategory, setSelectedCategory, setSelectedFeed}) {
     // popover
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
-    const id = open ? 'simple-popover' : undefined;
+    const id = open ? 'sideBar__postPopOverID' : undefined;
 
     const handlePopOpen = (e) =>{
         setAnchorEl(e.currentTarget)
