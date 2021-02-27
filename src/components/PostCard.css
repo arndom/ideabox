@@ -21,11 +21,19 @@
     justify-content: space-around;
     margin-left: 15px;
 }
+.postCard__subText > a{
+    color:white;
+    text-decoration: none;
+}
 
-.postCard__subText > h5{
+.postCard__subText > a:hover{
+    text-decoration: underline;
+}
+
+.postCard__subText > a >  h5{
     margin:10px;
     color: white;
-    font-weight: 500;
+    font-weight: 450;
     letter-spacing: 0.4px;
 }
 .postCard__subText > p{

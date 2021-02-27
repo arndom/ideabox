@@ -27,21 +27,45 @@
     object-fit: contain;
 }
 
-.sideBar__postButton{
-  background-color: #FFCB12;
-  border: 1px solid #FFCB12;
-  padding: 5px;
-  border-radius: 100px;
-  color: white;
-  font-weight: 200;
-  margin-bottom: 20px;  
-}
-
 .sideBar__logo > h3{
     color: white !important;
     letter-spacing: 0.8px;
 
 }
+
+ .MuiTypography-root{
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding:15px 0 0 0;
+}
+
+.sideBar__postButton{
+    background-color: #FFCB12;
+    border: 1px solid #FFCB12;
+    padding: 5px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 200;
+    /* margin-bottom: 20px;   */
+  }
+  
+  .sideBar__postPopOver{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 20vw;
+      height: 20vh;
+      padding: 10px;
+      background-color: #1F2937;
+  }
+
+  .sideBar__postPopOver > a > img{
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+  }
 
 .sideBar__categoryButtons{
     display: flex;

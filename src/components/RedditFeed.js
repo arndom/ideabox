@@ -60,7 +60,7 @@ function RedditFeed({selectedCategory, selectedFeed, setSelectedFeed}) {
             {feed.map( (post) => {
                 // convert unix time
                var rTime = new Date(post.created_utc*1000).toISOString();
-
+                // console.log(post.url)
                return (
                 <PostCard
                     key = {post.id}
@@ -68,9 +68,10 @@ function RedditFeed({selectedCategory, selectedFeed, setSelectedFeed}) {
                     time = {<ReactTimeAgo date={rTime} locale="en-US"/>}
                     title = {post.title}
                     reactions = {post.ups}
+                    link ={post.url}
                  />
                 )
-                
+
             })}
         </div>
     )

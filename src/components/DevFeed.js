@@ -44,6 +44,7 @@ function DevFeed({selectedCategory}) {
                     title = {post.title}
                     time = {<ReactTimeAgo date={post.published_timestamp} locale="en-US"/>}
                     reactions = {post.public_reactions_count} 
+                    link = {post.url}
                 />
             ))}
         </div>
