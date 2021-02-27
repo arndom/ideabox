@@ -33,8 +33,11 @@
 
 }
 
+.MuiPaper-root{
+    background-color: #1F2937 !important;
+}
+
  .MuiTypography-root{
-    background-color: #1F2937;
     color: white;
     text-align: center;
     padding:15px 0 0 0;
