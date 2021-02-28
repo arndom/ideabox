@@ -12,6 +12,7 @@ function DevFeed({selectedCategory}) {
 
     // couldn't implement pagination because #ideas posts are limited
     const endPost = [{
+        "id": '5566771',
         "user": {
             "username": "_dev"
         },
@@ -26,25 +27,13 @@ function DevFeed({selectedCategory}) {
         return response
     }
 
-    const handleScroll = (e) =>{
-        var isBottom = Math.round(e.target.scrollHeight - e.target.scrollTop) <= e.target.clientHeight;    
-        if(isBottom){
-            console.log('bottom');
-        }
-    } 
-
-    const dateSet = (date) =>{
-        var pubDate = new Date(date)
-        return pubDate
-    }
 
     useEffect(() => {
-            console.log(feed)
             fetchDev();
     }, [selectedCategory])
     
     return (
-        <div className = 'devFeed' onScroll={handleScroll}>
+        <div className = 'devFeed'>
             {feed.map( (post) => (
                 <PostCard
                     key = {post.id}

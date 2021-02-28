@@ -16,10 +16,11 @@ function App() {
 
   return (
     <div className= 'app'>
-        
+        <div className = 'app_container'>
         <SideBar selectedCategory={selectedCategory} setSelectedCategory = {setSelectedCategory} setSelectedFeed={setSelectedFeed} />
 
         <Feed selectedCategory = {selectedCategory} selectedFeed = {selectedFeed} setSelectedFeed = {setSelectedFeed}/>
+        </div>
 
     </div>
   );

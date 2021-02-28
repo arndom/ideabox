@@ -1,41 +1,36 @@
 .sideBar{
-    background-color:#1F2937;
-    width:8vw;
-    height: 100vh;
-    padding: 0 1rem;  
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
-}
+    width:8%;
+    height: 100%;
+
+    background-color:#1f2937;
+    padding: 0 1rem;  
+}  
 
 .sideBar__logo{
-    padding:0.8rem 0;  
+    padding: 0.99rem 1rem 0rem 1rem;
     margin-bottom: 20px;
+    width: inherit;
 }
 
-.sideBar__logo > h3{
+.sideBar__logo > h4{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    color: white !important;
+    letter-spacing: 0.8px;
 }
 
-.sideBar__logo > h3 > img{
-    height: 40%;
-    width: 40%;
+.sideBar__logo > h4 > img{
+    height: 500%;
+    width: 500%;
     object-fit: contain;
 }
 
-.sideBar__logo > h3{
-    color: white !important;
-    letter-spacing: 0.8px;
 
-}
-
-.sideBar__post{
-    padding-bottom: 20px;
-}
 
 .MuiPaper-root{
     background-color: #1F2937 !important;
@@ -62,15 +57,29 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      width: 20vw;
-      height: 20vh;
+      width: 200px;
+      height: 100px;
       padding: 10px;
       background-color: #1F2937;
   }
 
+  .sideBar__postPopOver > a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .sideBar__postPopOver > a:hover{
+    text-decoration: underline;
+  }
+
+  .sideBar__postPopOver > a > P{
+      font-size: small;
+  }
+
   .sideBar__postPopOver > a > img{
-      width: 80%;
-      height: 80%;
+      width: 70%;
+      height: 70%;
       object-fit: contain;
   }
 

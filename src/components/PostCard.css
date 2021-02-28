@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-left: 15px;
+    
 }
 .postCard__subText > a{
     color:white;

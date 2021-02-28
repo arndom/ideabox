@@ -7,8 +7,8 @@ const redditInstance = axios.create({
 const devInstance = axios.create({
     baseURL: 'https://dev.to/api'
 })
-const hashInstance = axios.create({
-    baseURL: `https://api.hashnode.com`
+const redditInstanceI = axios.create({
+    baseURL: `https://www.reddit.com/r/Startup_Ideas/`
 })
 
-export {redditInstance, devInstance, hashInstance};
+export {redditInstance, devInstance, redditInstanceI};

@@ -1,7 +1,15 @@
 .app{
-  display: flex;
-  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1;
   background-color: #111827;
-  color: #6B7280;
+  color: #6b7280;
+  overflow: auto hidden ;
+
+}
+
+.app_container{
+  display: inline-flex;  
   height: 100vh;
+  overflow: auto hidden;
 }

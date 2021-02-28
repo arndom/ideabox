@@ -2,7 +2,7 @@ import React from 'react';
 import DevFeed from './DevFeed';
 import './Feed.css';
 import FeedHeader from './FeedHeader';
-import HashFeed from './HashFeed';
+import RedditFeedI from './RedditFeedI';
 import RedditFeed from './RedditFeed';
 
 function Feed({selectedCategory, selectedFeed, setSelectedFeed}) {
@@ -23,9 +23,9 @@ function Feed({selectedCategory, selectedFeed, setSelectedFeed}) {
             </div>
             
             {/* hashnode feed container */}
-            <div className = 'feed__hash'>
-                <FeedHeader title = 'Hashnode' subTitle = '#ideas'/>
-                <HashFeed/>
+            <div className = 'feed__redditI'>
+                <FeedHeader title = 'Reddit' subTitle = 'r/Startup_Ideas'/>
+                <RedditFeedI selectedCategory = {selectedCategory[0]} selectedFeed = {selectedFeed} setSelectedFeed={setSelectedFeed}/>
             </div>
 
         </div>

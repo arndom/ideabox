@@ -1,36 +1,33 @@
 .feed{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    width:92%;
     height: 100vh;
-
 }
 
 .feed__reddit{
     background-color:#1F2937;
-    width:25vw;
+    width: 350px;  
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 10px;
+    margin-left:10px;
 }
 
 .feed__dev{
     background-color:#1F2937;
-    width:25vw;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 10px;
-    
+    margin-left:10px;
 }
 
-.feed__hash{
+.feed__redditI{
     background-color:#1F2937;
-    width:25vw;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 10px;
-
+    margin-left:10px;
 }

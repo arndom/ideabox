@@ -5,7 +5,7 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import Logo from "../assets/images/logo.png";
 import requests from '../requests';
 import Popover from '@material-ui/core/Popover';
-import HashnodeImage from '../assets/images/hashnode.png'
+// import HashnodeImage from '../assets/images/hashnode.png'
 
 function SideBar({selectedCategory, setSelectedCategory, setSelectedFeed}) {
 
@@ -45,10 +45,10 @@ function SideBar({selectedCategory, setSelectedCategory, setSelectedFeed}) {
 
     return (
         <div className = 'sideBar'>
-
+                    
             <div className = 'sideBar__logo'>
                 
-                <h3> <img src = {Logo}/> ideabox</h3>
+                <h4> <img src = {Logo}/> ideabox</h4>
             </div>
 
             <div className = 'sideBar__post'>
@@ -78,13 +78,16 @@ function SideBar({selectedCategory, setSelectedCategory, setSelectedFeed}) {
 
                     <div className = 'sideBar__postPopOver'>
                         <a href='https://www.reddit.com/r/AppIdeas/submit' target = '_blank'>
-                            <img src="https://img.icons8.com/color/240/000000/reddit.png" alt = 'Reddit'/>
+                            <img src="https://img.icons8.com/color/240/000000/reddit.png" alt = 'r/AppIdeas'/>
+                            <p>App Ideas</p>
                         </a>
                         <a href='https://dev.to/new' target = '_blank'>
                             <img src="https://img.icons8.com/windows/256/000000/dev.png" alt ='dev.to'/>
+                            <p>Ideas</p>
                         </a>
-                        <a href='https://hashnode.com/create/story' target = '_blank'>
-                            <img src = {HashnodeImage}  alt = 'hashnode'/>                        
+                        <a href='https://www.reddit.com/r/Startup_Ideas/submit' target = '_blank'>
+                            <img src="https://img.icons8.com/fluent/240/000000/reddit.png" alt = 'r/Startup_Ideas' /> 
+                            <p>Startup Ideas</p>                     
                         </a>
                     </div>
 
